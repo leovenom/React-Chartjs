@@ -47,15 +47,19 @@ class App extends Component {
   }
 render() {
   return (
+
+    
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-
-      <Chart 
+      <div className="chart" style={{justifyContent: "center", display: "inline-flex"}}>
+        <Chart
         chartData={this.state.chartData} 
         Location="Massachusetts"
-        legendPosition="bottom" />
+        legendPosition="bottom" 
+        />
+      </div>
     </div>
   );
 }

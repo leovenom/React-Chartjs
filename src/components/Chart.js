@@ -35,6 +35,7 @@ class Chart extends Component{
           }}
         />
 
+
         <Line
           data={this.state.chartData}
           options={{
@@ -65,6 +66,7 @@ class Chart extends Component{
           }}
         />
       </div>
+      
     )
   }
 }
